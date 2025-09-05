@@ -1,0 +1,13 @@
+/* ****** custom text-stroke ****** */
+.textstroke {
+  /* -webkit-text-stroke: 1px #2cff05;
+  color: transparent; */
+  color: var(--neon-green);
+  filter: drop-shadow(0 0 4.4px var(--neon-green));
+
+}
+
+.boxshadow {
+  filter: drop-shadow(0 0 4.4px var(--dark-blue)) drop-shadow(0 0 31.06px var(--dark-blue)) drop-shadow(0 0 106.5px var(--dark-blue)) drop-shadow(0 0 186.38px var(--dark-blue));
+
+}

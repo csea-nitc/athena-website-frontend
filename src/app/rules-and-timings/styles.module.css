@@ -1,0 +1,4 @@
+.boxshadow {
+    filter: drop-shadow(0 0 4.4px #3F56E9) drop-shadow(0 0 31.06px #3F56E9)  drop-shadow(0 0 106.5px #3F56E9) drop-shadow(0 0 186.38px #3F56E9);
+
+}

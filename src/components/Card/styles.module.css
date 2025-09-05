@@ -1,0 +1,10 @@
+.iconshadow {
+  filter: drop-shadow(0px 0px 90.72px #3448BB) drop-shadow(0px 0px 45.36px #3448BB) drop-shadow(0px 0px 12.96px #3448BB);
+
+}
+
+
+.txtshadow {
+  filter: drop-shadow(0 0 4.4px #3F56E9) drop-shadow(0 0 31.06px #3F56E9)  
+
+}

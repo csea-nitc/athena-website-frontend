@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-blue: rgba(63, 86, 233, 1);
+  --light-blue: rgba(58, 203, 241, 1);
+  --neon-green: rgba(44, 255, 5, 1);
+  --neon-red: rgba(255, 5, 5, 1);
+
+  --secondary: rgba(14, 14, 16, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: rgba(14, 14, 16, 1);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0;
+}

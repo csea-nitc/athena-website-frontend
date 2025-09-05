@@ -1,0 +1,24 @@
+.chip {
+    border: 1px solid white;
+    text-wrap: nowrap;
+    font-size: 18px;
+    padding: 6px 24px;
+    cursor: default;
+    user-select: none;
+}
+
+.chip .glowEffect {
+    filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white);
+    transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.chip:hover .glowEffect {
+    filter: drop-shadow(0 0 8px white) drop-shadow(0 0 12px white) drop-shadow(0 0 16px white);
+
+}
+
+@media (width < 1080) {
+    .chip {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,109 @@
+/* ******** basic styling ******* */
+.button {
+    border: 1px solid white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 6px 8px;
+
+    transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    z-index: -1;
+
+    transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.button .image {
+    transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.button.hideIcon .image {
+    display: none;
+}
+
+.glowEffect {
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 7px white);
+    transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.button .arrow {
+    stroke: white;
+    transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+/* ****************************** */
+
+
+
+
+
+/* ****** on hover styling ****** */
+
+.button:not(:disabled):hover {
+    transform: scale(1.01);
+}
+
+.button:not(:disabled):active {
+    transform: scale(0.99);
+}
+
+.button:not(:disabled):hover .bg {
+    width: calc(100% - 1rem - 15px);
+}
+
+.button.hideIcon:not(:disabled):hover .bg {
+    width: calc(100%);
+}
+
+.button:not(:disabled):active .bg {
+    width: 100%;
+}
+
+.button:not(:disabled):hover {
+    color: black;
+}
+
+.button:not(:disabled):hover .image {
+    transform: rotate(90deg);
+}
+
+.button:not(:disabled):hover .glowEffect {
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 10px white) drop-shadow(0 0 16px white);
+}
+
+/* ****************************** */
+
+
+
+/* ****** on click styling ****** */
+
+.button:not(:disabled):active .glowEffect {
+    filter: none;
+}
+
+.button:not(:disabled):active .glowEffect .arrow {
+    stroke: black;
+}
+
+/* ****************************** */
+
+
+
+/* ****** disabled styling ****** */
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* ****************************** */
